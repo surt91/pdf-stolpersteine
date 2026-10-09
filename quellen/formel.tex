@@ -1,0 +1,28 @@
+% Ising-Modell, dreimal gesetzt (siehe build.sh):
+%   pdflatex            -> Type1-Fonts, OT1-Encoding, keine cmap-Pakete
+%   lualatex            -> OpenType + unicode-math
+%   latex + dvips -Ppk  -> Bitmap-Fonts (Type 3) über PostScript
+\documentclass[varwidth=14cm,border=4pt]{standalone}
+\ifdefined\directlua
+  \usepackage{fontspec}
+  \usepackage{unicode-math}
+  \setmathfont{Latin Modern Math}
+\else
+  \usepackage{amsmath}
+\fi
+\begin{document}
+Das Ising-Modell beschreibt Spins $\sigma_i \in \{-1, +1\}$ auf einem Gitter.
+Die Energie einer Konfiguration ist durch den Hamiltonoperator gegeben:
+\[
+  \mathcal{H}(\sigma) = -J \sum_{\langle i,j \rangle} \sigma_i \sigma_j - h \sum_{i=1}^{N} \sigma_i
+\]
+Für die Zustandssumme gilt
+\[
+  Z = \sum_{\{\sigma\}} e^{-\beta \mathcal{H}(\sigma)}, \qquad \beta = \frac{1}{k_B T},
+\]
+und die Magnetisierung pro Spin ergibt sich zu
+\[
+  m = \frac{1}{N} \sum_{i=1}^{N} \langle \sigma_i \rangle
+    = \frac{1}{N\beta} \frac{\partial \ln Z}{\partial h}.
+\]
+\end{document}

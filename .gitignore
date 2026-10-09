@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+.env
+quellen/build/
+# Seitenbilder für das VLM, neu erzeugen mit: pdftoppm -r 110 -png out/stolpersteine.pdf out/seiten/seite
+out/seiten/

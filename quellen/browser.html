@@ -1,0 +1,81 @@
+<!doctype html>
+<!--
+  Typische Intranet-Seite für "Drucken als PDF" (siehe quellen/build.sh und STOLPERSTEINE.md#browser_druck).
+  Enthält: Navigations- und Cookie-Boilerplate, unsichtbaren Skip-Link, CSS-Großbuchstaben und
+  Sperrung, Kapitälchen, zweispaltigen Blocksatz mit automatischer Silbentrennung, Ligaturen,
+  per CSS erzeugten Text, browsergenerierte Listennummern, Tabelle, SVG-Text, Emoji, Textschatten.
+  Der Inhalt muss mit GROUND_TRUTH in pitfalls/browser_druck.py übereinstimmen.
+-->
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>Reiserichtlinie – Intranet Musterfirma</title>
+<style>
+  @page { size: A4; margin: 16mm 18mm; }
+  body { font-family: "DejaVu Serif", serif; font-size: 10.5pt; line-height: 1.4; color: #222; margin: 0; }
+  .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  nav { font-family: "DejaVu Sans", sans-serif; font-size: 9pt; border-bottom: 1px solid #ccc; padding-bottom: 4px; }
+  nav a { color: #0645ad; margin-right: 1.2em; text-decoration: none; }
+  h1 { font-family: "DejaVu Sans", sans-serif; text-transform: uppercase; letter-spacing: 0.18em; font-size: 18pt; margin: 14px 0 4px; }
+  .meta { font-variant: small-caps; color: #555; }
+  .cols { column-count: 2; column-gap: 8mm; text-align: justify; hyphens: auto; font-feature-settings: "liga" 1; }
+  .note { background: #fff4d6; border-left: 4px solid #e0a800; padding: 6px 10px; margin: 10px 0; }
+  .note::before { content: "Hinweis: "; font-weight: bold; }
+  h2 { font-family: "DejaVu Sans", sans-serif; font-size: 12pt; margin: 14px 0 6px; text-shadow: 1px 1px 2px #999; }
+  table { border-collapse: collapse; font-size: 9.5pt; }
+  th, td { border: 1px solid #999; padding: 3px 8px; }
+  td.num { text-align: right; }
+  .cookie { position: fixed; bottom: 0; left: 0; right: 0; background: #333; color: #eee; font-family: "DejaVu Sans", sans-serif; font-size: 8pt; padding: 6px 10px; }
+</style>
+</head>
+<body>
+<a class="sr-only" href="#inhalt">Zum Hauptinhalt springen</a>
+<nav>
+  <a href="#">Startseite</a><a href="#">Personal</a><a href="#">Reisen</a><a href="#">IT-Service</a><a href="#">Kontakt</a>
+</nav>
+
+<main id="inhalt">
+<h1>Reiserichtlinie 2026</h1>
+<p class="meta">Gültig ab 1. Januar 2026 · Herausgegeben von der Personalabteilung</p>
+
+<div class="cols">
+<p>Dienstreisen sind vor Reiseantritt im Reiseportal zu beantragen und durch die Führungskraft
+freizugeben. Die Auswahl des Verkehrsmittels erfolgt nach den Grundsätzen der Wirtschaftlichkeit und
+der Effizienz; Bahnreisen haben bei Strecken unter 500 Kilometern grundsätzlich Vorrang vor Flügen.
+Die offizielle Abrechnung erfolgt ausschließlich über das Reisekostenformular.</p>
+<p>Übernachtungskosten werden bis zu einem Betrag von 120 Euro pro Nacht erstattet, in München,
+Frankfurt und Hamburg bis zu 150 Euro. Für Verpflegungsmehraufwendungen gelten die steuerlichen
+Pauschalen. Die Erstattung von Taxifahrten ist auf begründete Ausnahmefälle beschränkt.</p>
+</div>
+
+<p class="note">Reisen in Länder mit Reisewarnung des Auswärtigen Amtes müssen zusätzlich von der Geschäftsführung genehmigt werden.</p>
+
+<h2>Ablauf der Abrechnung</h2>
+<ol>
+  <li>Belege innerhalb von vier Wochen nach Reiseende hochladen.</li>
+  <li>Reisekostenformular ausfüllen und digital signieren.</li>
+  <li>Freigabe durch die Führungskraft abwarten.</li>
+</ol>
+
+<h2>Erstattungssätze</h2>
+<table>
+  <tr><th>Kostenart</th><th>Inland</th><th>Ausland</th></tr>
+  <tr><td>Übernachtung (pro Nacht)</td><td class="num">120 €</td><td class="num">nach Land</td></tr>
+  <tr><td>Verpflegung (ganzer Tag)</td><td class="num">28 €</td><td class="num">nach Land</td></tr>
+  <tr><td>Kilometerpauschale (Pkw)</td><td class="num">0,30 €</td><td class="num">0,30 €</td></tr>
+</table>
+
+<h2>Kontakt</h2>
+<p>
+  <svg width="16" height="16" viewBox="0 0 16 16" style="vertical-align: -3px"><circle cx="8" cy="8" r="7" fill="#0645ad"/><text x="8" y="12" font-size="11" text-anchor="middle" fill="#fff" font-family="DejaVu Sans">i</text></svg>
+  Fragen beantwortet das Reiseteam unter <a href="mailto:reisen@musterfirma.example">reisen@musterfirma.example</a> 👍
+</p>
+<svg width="300" height="40" viewBox="0 0 300 40">
+  <rect x="0" y="0" width="300" height="40" rx="6" fill="#e8f0fe"/>
+  <text x="12" y="25" font-family="DejaVu Sans" font-size="13" fill="#0645ad">Hotline: 0800 555 0199</text>
+</svg>
+</main>
+
+<div class="cookie">Wir verwenden Cookies, um die Nutzung des Intranets zu analysieren. Mit der weiteren Nutzung stimmen Sie dem zu. [Akzeptieren] [Ablehnen]</div>
+</body>
+</html>

@@ -1,0 +1,105 @@
+{
+  "inhaltsverzeichnis": [
+    1
+  ],
+  "ligaturen": [
+    2
+  ],
+  "tounicode_fehlt": [
+    3
+  ],
+  "tounicode_falsch": [
+    4
+  ],
+  "nullbytes": [
+    5
+  ],
+  "type3_font": [
+    6
+  ],
+  "unicode_doppelgaenger": [
+    7
+  ],
+  "leerzeichen": [
+    8
+  ],
+  "schrift_nicht_eingebettet": [
+    9
+  ],
+  "silbentrennung": [
+    10
+  ],
+  "mehrspaltig": [
+    11
+  ],
+  "stream_reihenfolge": [
+    12
+  ],
+  "hoch_tiefgestellt": [
+    13
+  ],
+  "ueberschriften_listen": [
+    14
+  ],
+  "tabellen": [
+    15
+  ],
+  "tabelle_seitenumbruch": [
+    16,
+    17
+  ],
+  "gedreht_rtl": [
+    18
+  ],
+  "doppelter_text": [
+    19
+  ],
+  "wasserzeichen": [
+    20
+  ],
+  "seitenumbruch": [
+    21,
+    22
+  ],
+  "text_als_kurven": [
+    23
+  ],
+  "scan": [
+    24
+  ],
+  "ocr_layer": [
+    25
+  ],
+  "diagramm_bild": [
+    26
+  ],
+  "formular_annotationen": [
+    27
+  ],
+  "versteckter_text": [
+    28
+  ],
+  "schwaerzung": [
+    29
+  ],
+  "inkrementelles_update": [
+    30
+  ],
+  "text_in_xobject": [
+    31
+  ],
+  "formel": [
+    32,
+    33,
+    34
+  ],
+  "office_export": [
+    35
+  ],
+  "browser_chrome": [
+    36
+  ],
+  "browser_postscript": [
+    37
+  ]
+}

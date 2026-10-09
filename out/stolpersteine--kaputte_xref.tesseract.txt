@@ -1,0 +1,841 @@
+
+===== Seite 1 =====
+Mu
+
+sterfirma GmbH - Stolperstein-Testdokument VERTRAULICH — nur für den internen Gebrauch
+
+Stolperstein-Testdokument
+
+Ei
+
+n PDF, das Textextraktoren das Leben schwer macht
+
+Inhaltsverzeichnis
+
+1. Deckblatt und InhaltsverzeichniS .r R R RR RE RRRRRKRRRRRERRRRRKRKRRRERERKRREKEKKRRREEKKRRREKKG i
+C 1
+3. Fehlende ToUnicode-CMaAp err RR RR RR ERRREERREEERREKERRERKREERRREERREEERREKEREEKREEKKREEKKEEKENG 2
+4. Falsche ToUnicode-CMaAp err RR ERRRRERRR RR RRERRREERRREERREEERRRERKRERKREERREEERREKEREEKREEKKREEKEUEKENG 3
+5. Null-Bytes und SteuerzeicheN vrr RERRRRRRRRRRRRRRRRERRRREREREEREEKERREEERRERKREERREEERREKEREEKREG 4
+6. Type-3-Schrift ohne ZeichenzuordnuNG err ERRR RR ERREERRRERKREERREEERREEEREEEREG 5
+7. Unicode-Doppelgänger arrr R RR RR RE RRRRERRRRRREKKRRRRRRKRRRRARKERRERERERREEEKKRRRRERKRRRUEKKKRRUEKKGG 6
+8. Leerzeichen und WortgrenZeN ernr EK R EK RR RE RRRRRKRRRRRRKRRRRKRRREKERERREEEKKRRRKERKRRRUEEKKRREKGGG 7
+9. Nicht eingebettete Schrift ...r ERRRERRRRRRERRRRERRRERREREREREERKERERREEERREERKREERREEERREEEREEEUEG 8
+10. Silbentrennung und Zeilenumbrüch® vrr RREERRREERKREERRERRRREKRREERRKERKR EK KEEKENG 9
+11. Mehrspaltiges LayOUt err R RR RR RERRRRRRKRRRRRERKRRRRRRKRRERERKRRRREKKRRRREEKRRRUEKKKRRUUEGKUGG 10
+12. Stream-Reihenfolge und Lesereihenfolg® .r EK R RR RR EERR RR REER RR ER RE KU EG 11
+13. Hoch- und TiefstellungeN .r EK RRRRE R RRR RR ERRRRRRRRRREKRKRRERRKKRRRREKKRRREERKRRRUEKKERREEEKKREGG 12
+14. Überschriften und LiSteN arrr EK RR 13
+15. TabelleN RR R AAA RR R RR RR RRRRKKRERRERRRRRRRRKRRRRERKERRRRKKRRRERAKKRRERERKRRRUEKKRRREEKKERREEKKKRRUEEKKRGG 14
+16. Tabelle über zwei SeiteN v RRRRRRRRRRR RR RRERRRRERRREERERERRREEERREEEREERREEERREERRREERREEEREG 15
+17. Gedrehter Text und Schreibrichtung «R RR EK ERRRERRRERREERREEERREERKREERREEEREG 17
+18. Doppelter Text (Pseudo-Fett, Schatten) .. RERRRERREERREEERREERKREERREEEREG 18
+19. WasserzeicheN err R RR RR RR RR RRRERRRRRREERRRRRRERKRRRRRRKRRREREKKRREREKKRRRREKKRRRREEKRRRUEKKKRRUEEGKRGG 19
+20. Satz über die SeitengreNnZE er R RR RR ERRREERRRERRREEERREERREEERREEERREERRREERREEKREEG 20
+21. Text als KUrven err RR RR RR RRRRERRRRRERRRRRRRRRRRRRRKRRRRRRKRRRERERKRRREEKKRRRRERKRRREEKKERRUEKKKRRUEEKKUUEG 22
+22. Gescannte Seite ohne TeXt arrr RRRRRRRR RR RR ERRRRERRREERERERRREEERREERREERREEERREERRREERREEKREEG 23
+23. Scan mit fehlerhaftem OCR-Layer e RRKERRRERRREERRRERREERREEERREERRREERREEKEEEG 24
+24. Diagramme und Bilder er RRRR RE RRRRRK RR RRRRRRRRRKRRKRREKKKRRRRERKRRREEKKERREEKKKRRUEEKKUUGG 25
+25. Formularfelder und Kommentare err R RR RR RR R RR RR R RRRERRRRRKERKRRREEKKRRREERKRRRUEEKKRGG 26
+26. Versteckter TEXt aur RRREKRRRREKRRRRRRRRRRRKRRKRRRRARKRRRERERKRREEEKKRRRRERKRRREEKKKRREEKKKRRUUEKKRUGG 27
+S 28
+28. Inkrementelles Update arrr RRR RR RRR RR RRRRRRKRRREKERKRREEEKKRRRRERKRRRKEKKKRRUERKKRRUEEKKRUEG 29
+29. Text in Form-XObjeCtS arrr RREERRREERRRRRRERRRRRRRRRRRRKEREREEKERERKREEEEREERREEERREEERREERRREERREEKRUEG 30
+30. Mathematische Formeln (LATeEX) errn R RR RR RR RRR RR RRREKERRRREKRKRRRKKKRRRKEKKRRREEKKRRRUEEKKRUGG 31
+31. Office-Export (LibreOffiC@) ...r ERRRERRRRRRRRRRRRRRKRRRKERRREERERERRREEERRERREEERKEEERREERRREERREEKUEEG 34
+32. Browser: Chrome „Drucken als PDF“ errn ERREERRREERKREERREERREEERREERKREERREEKREEG 35
+33. Browser über PostScript-Druckertreiber ... K RE ERRRERREERREERREERRREER R UE KEEEG 36
+
+Dokument-ID: MF-2026-0815 - Version 3.2 Seite i
+
+===== Seite 2 =====
+Musterfirma GmbH - Stolperstein-Testdokument VERTRAULICH — nur für den internen Gebrauch
+
+2. Ligaturen
+
+A) ToUnicode löst die Ligatur korrekt auf
+Die Effizienz der Auftragsfinanzierung wurde offiziell geprüft.
+
+Der Stoff ist flexibel, der Einfluss auf die Bilanz gering.
+
+B) ToUnicode verweist auf das Ligatur-Zeichen (U+FBO1 usw.)
+Die Effizienz der Auftragsfinanzierung wurde offiziell geprüft.
+
+Der Stoff ist flexibel, der Einfluss auf die Bilanz gering.
+
+C) Ligatur-Glyphen fehlen in der ToUnicode-CMap
+Die Effizienz der Auftragsfinanzierung wurde offiziell geprüft.
+
+Der Stoff ist flexibel, der Einfluss auf die Bilanz gering.
+
+Dokument-ID: MF-2026-0815 - Version 3.2 Seite 1
+
+===== Seite 3 =====
+Musterfirma GmbH - Stolperstein-Testdokument VERTRAULICH — nur für den internen Gebrauch
+
+3. Fehlende ToUnicode-CMap
+
+A) Ohne ToUnicode, eingebettete Schrift hat noch eine cmap-Tabelle
+Kündigungsfrist: drei Monate zum Quartalsende.
+
+Ansprechpartnerin ist Frau Weber, Durchwahl 4711.
+
+B) Ohne ToUnicode, ohne cmap-Tabelle und ohne Glyophnamen
+Bei Rückfragen wenden Sie sich bitte an den Kundenservice.
+
+Die Servicezeiten sind montags bis freitags von 8 bis 18 Uhr.
+
+Dokument-ID: MF-2026-0815 - Version 3.2 Seite 2
+
+===== Seite 4 =====
+Musterfirma GmbH - Stolperstein-Testdokument VERTRAULICH — nur für den internen Gebrauch
+
+4. Falsche ToUnicode-CMap
+
+Die Zahlung erfolgt innerhalb von 30 Tagen netto.
+Der Rabatt beträgt 2 Prozent bei Zahlung binnen 10 Tagen.
+
+Dokument-ID: MF-2026-0815 - Version 3.2 Seite 3
+
+===== Seite 5 =====
+Musterfirma GmbH - Stolperstein-Testdokument VERTRAULICH — nur für den internen Gebrauch
+
+5. Null-Bytes und Steuerzeichen
+
+Grüße aus Düsseldorf, Königsallee 12.
+Die Gebühren für März sind fällig.
+
+Dokument-ID: MF-2026-0815 - Version 3.2 Seite 4
+
+===== Seite 6 =====
+Musterfirma GmbH - Stolperstein-Testdokument VERTRAULICH — nur für den internen Gebrauch
+
+6. Type-3-Schrift ohne Zeichenzuordnung
+
+Diese Zeilen verwenden eine Type-3-Schrift.
+Die Garantie verlängert sich auf 24 Monate.
+
+Dokument-ID: MF-2026-0815 - Version 3.2 Seite 5
+
+===== Seite 7 =====
+Musterfirma GmbH - Stolperstein-Testdokument VERTRAULICH — nur für den internen Gebrauch
+
+7. Unicode-Doppelgänger
+
+Herr Müller und Herr Müller sind dieselbe Person.
+Bitte ändern Sie Ihr Passwort regelmäßig.
+
+Kaffee und Kaffee sehen gleich aus.
+
+Der Betrag von 10 000 Euro ist fällig.
+
+Siehe Seiten 3-5, Temperatur —5 °C.
+
+Er sagte „Ja“ und meinte ‚Nein‘.
+
+Dokument-ID: MF-2026-0815 - Version 3.2 Seite 6
+
+===== Seite 8 =====
+Musterfirma GmbH - Stolperstein-Testdokument VERTRAULICH — nur für den internen Gebrauch
+
+8. Leerzeichen und Wortgrenzen
+
+A) Jeder Buchstabe einzeln positioniert, keine Leerzeichen im Stream
+Die Lieferung erfolgt frei Haus.
+
+B) Gesperrt: zusätzlicher Zeichenabstand (Tc)
+Wichtiger Hinweis zur Lieferung
+
+C) TJ-Array: Wörter mit Verschiebungen statt Leerzeichen
+
+Das Angebot ist gültig bis Ende des Monats.
+
+D) Zu enge Wortabstände (1 pt)
+Rechnungsadresseund Lieferadresse sindidentisch.
+
+E) Blocksatz: wenige Wörter über die ganze Zeilenbreite
+
+Kurz und gut.
+
+Dokument-ID: MF-2026-0815 - Version 3.2 Seite 7
+
+===== Seite 9 =====
+Musterfirma GmbH - Stolperstein-Testdokument VERTRAULICH — nur für den internen Gebrauch
+
+9. Nicht eingebettete Schrift
+
+A) Leerzeichen im Content-Stream
+Die Kündigungsfrist beträgt drei Monate zum Quartalsende.
+
+Sie ist schriftlich gegenüber der Personalabteilung zu erklären.
+
+B) Jedes Wort einzeln positioniert ”
+Die Lieferung erfolgt frei Haus und ist bis zur Ubergabe versichert.
+
+Für Teillieferungen fallen keine zusätzlichen Kosten an.
+
+Dokument-ID: MF-2026-0815 - Version 3.2 Seite 8
+
+===== Seite 10 =====
+Musterfirma GmbH - Stolperstein-Testdokument VERTRAULICH — nur für den internen Gebrauch
+
+10. Silbentrennung und Zeilenumbrüche
+
+A) Schmale Spalte mit Trennstrichen (Bindestrich-Minus)
+Die Donaudampfschiff-
+fahrtsgesellschaft hat ihre
+Rechtsschutzversiche-
+
+rung zum Jahresende ge-
+
+kündigt. Rückfragen bitte per E-
+
+Mail an den Vertrieb.
+
+B) Weiches Trennzeichen U+00AD am Zeilenende
+
+Bitte reichen Sie die Arbeitsunfähigkeits-
+bescheinigung spätestens am dritten
+Kalendertag ein.
+
+Dokument-ID: MF-2026-0815 - Version 3.2
+
+Seite 9
+
+===== Seite 11 =====
+Musterfirma GmbH - Stolperstein-Testdokument
+
+11. Mehrspaltiges Layout
+
+Urlaubsregelung: Jeder Mitarbeitende hat
+Anspruch auf 30 Urlaubstage pro Jahr.
+Resturlaub muss bis zum 31. März des
+Folgejahres genommen werden, sonst
+verfällt er. Urlaubsanträge sind mindestens
+zwei Wochen im Voraus zu stellen.
+
+Dokument-ID: MF-2026-0815 - Version 3.2
+
+VERTRAULICH -— nur für den internen Gebrauch
+
+Reisekosten: Dienstreisen werden mit der
+Bahn in der zweiten Klasse durchgeführt.
+Hotelkosten werden bis 120 Euro pro Nacht
+erstattet. Belege sind innerhalb von vier
+Wochen nach Reiseende einzureichen.
+
+Seite 10
+
+===== Seite 12 =====
+Musterfirma GmbH - Stolperstein-Testdokument VERTRAULICH — nur für den internen Gebrauch
+
+12. Stream-Reihenfolge und Lesereihenfolge
+
+A) Zeilen von unten nach oben gezeichnet
+
+Der Server wird jeden Sonntag um 3 Uhr neu gestartet. Während des Neustarts sind keine
+Anmeldungen möglich. Laufende Sitzungen werden vorher automatisch gespeichert. Bei
+Problemen hilft die Hotline unter der Nummer 1234.
+
+B) Anleitung in der Reihenfolge 3, 1, 4, 2 gezeichnet
+1. Gerät ausschalten und vom Strom trennen.
+
+2., Gehäuse Öffnen und alte Batterie entnehmen.
+3. Neue Batterie einsetzen und Gehäuse schließen.
+4. Gerät wieder einschalten und Uhrzeit einstellen.
+
+Dokument-ID: MF-2026-0815 - Version 3.2 Seite 11
+
+===== Seite 13 =====
+Musterfirma GmbH - Stolperstein-Testdokument VERTRAULICH — nur für den internen Gebrauch
+
+13. Hoch- und Tiefstellungen
+
+Der Umsatz stieg 2023' um 12 Prozent.
+Die Bürofläche beträgt 250 m*
+Die zulässige Abweichung liegt bei 10°.
+
+Der CO,-Ausstoß sank laut Bericht deutlich.
+
+Fußnoten
+' Vorläufige Zahlen, ungeprüft.
+? Nachhaltigkeitsbericht 2024, S. 17.
+
+Dokument-ID: MF-2026-0815 - Version 3.2 Seite 12
+
+===== Seite 14 =====
+Musterfirma GmbH - Stolperstein-Testdokument VERTRAULICH — nur für den internen Gebrauch
+
+14. Überschriften und Listen
+
+3 Sicherheitsrichtlinie
+
+3.1 Zugang zum Gebäude
+
+Der Zugang ist nur mit gültigem Ausweis gestattet. Besucher melden sich am Empfang.
+3.2 Passwörter
+
+Wichtig: Passwörter müssen folgende Regeln erfüllen.
+
+m _ mindestens 12 Zeichen lang
+m Groß- und Kleinbuchstaben sowie Ziffern
+m keine Wiederverwendung der letzten fünf Passwörter
+
+4 Datenschutz
+
+1. Personenbezogene Daten werden verschlüsselt gespeichert und nach zwei
+Jahren gelöscht.
+
+2., Auskunftsersuchen werden innerhalb eines Monats beantwortet.
+
+Dokument-ID: MF-2026-0815 - Version 3.2 Seite 13
+
+===== Seite 15 =====
+Musterfirma GmbH - Stolperstein-Testdokument VERTRAULICH — nur für den internen Gebrauch
+
+15. Tabellen
+A) Tabelle mit Rahmen und verbundenen Zellen
+Umsatz (Mio. €)
+Region Anmerkung
+2023 2024
+Nord 12,4 13,1
+Süd 8,7 9,9 | inkl. Österreich
+West 15,0 Zahlen folgen
+Ost (Neugründung — 2,3
+seit Q3/2024)
+
+B) Rahmenlose Tabelle
+
+Position Menge Einzelpreis Summe
+Beratung 12 150,00 € 1.800,00 €
+Reisekosten 1 320,50 € 320,50 €
+Lizenz (jährlich) 3 1.200,00 € 3.600,00 €
+
+Dokument-ID: MF-2026-0815 - Version 3.2 Seite 14
+
+===== Seite 16 =====
+Musterfirma GmbH - Stolperstein-Testdokument
+
+16. Tabelle über zwei Seiten
+
+Tabelle 3 listet alle Geräte im Inventar der Niederlassung Köln.
+
+Tabelle 3: Inventarliste
+
+VERTRAULICH -— nur für den internen Gebrauch
+
+Nr. Gerät Standort Anschaffung Wert (€)
+1 Server Raum 1.02 2020-02 4.800,00
+2 Tablet Raum 2.14 2021-03 579,00
+3 Telefon Empfang 2022-04 129,00
+4 Beamer Serverraum 2023-05 899,00
+5 Drucker Raum 1.01 2024-06 640,00
+6 Dockingstation Raum 1.02 2019-07 189,00
+7 Monitor 27 Zoll Raum 2.14 2020-08 349,00
+8 Notebook Empfang 2021-09 1.290,00
+9 Server Serverraum 2022-10 4.800,00
+10 Tablet Raum 1.01 2023-11 579,00
+11 Telefon Raum 1.02 2024-12 129,00
+12 Beamer Raum 2.14 2019-01 899,00
+13 Drucker Empfang 2020-02 640,00
+14 Dockingstation Serverraum 2021-03 189,00
+15 Monitor 27 Zoll Raum 1.01 2022-04 349,00
+16 Notebook Raum 1.02 2023-05 1.290,00
+17 Server Raum 2.14 2024-06 4.800,00
+18 Tablet Empfang 2019-07 579,00
+19 Telefon Serverraum 2020-08 129,00
+20 Beamer Raum 1.01 2021-09 899,00
+21 Drucker Raum 1.02 2022-10 640,00
+22 Dockingstation Raum 2.14 2023-11 189,00
+23 Monitor 27 Zoll Empfang 2024-12 349,00
+24 Notebook Serverraum 2019-01 1.290,00
+25 Server Raum 1.01 2020-02 4.800,00
+26 Tablet Raum 1.02 2021-03 579,00
+27 Telefon Raum 2.14 2022-04 129,00
+28 Beamer Empfang 2023-05 899,00
+29 Drucker Serverraum 2024-06 640,00
+30 Dockingstation Raum 1.01 2019-07 189,00
+31 Monitor 27 Zoll Raum 1.02 2020-08 349,00
+32 Notebook Raum 2.14 2021-09 1.290,00
+33 Server Empfang 2022-10 4.800,00
+34 Tablet Serverraum 2023-11 579,00
+35 Telefon Raum 1.01 2024-12 129,00
+36 Beamer Raum 1.02 2019-01 899,00
+37 Konferenzsystem mit Kamera, Raum 2.14 2020-02 7.450,00
+
+Übertrag 49.357,00
+
+Dokument-ID: MF-2026-0815 - Version 3.2
+
+Seite 15
+
+===== Seite 17 =====
+Musterfirma GmbH - Stolperstein-Testdokument
+
+Tabelle 3: Inventarliste (Fortsetzung)
+
+VERTRAULICH -— nur für den internen Gebrauch
+
+Nr. Gerät Standort Anschaffung Wert (€)
+Übertrag 49.357,00
+Mikrofonen und Display
+
+38 Dockingstation Empfang 2021-03 189,00
+
+39 Monitor 27 Zoll Serverraum 2022-04 349,00
+
+40 Notebook Raum 1.01 2023-05 1.290,00
+
+41 Server Raum 1.02 2024-06 4.800,00
+
+42 Tablet Raum 2.14 2019-07 579,00
+
+43 Telefon Empfang 2020-08 129,00
+
+44 Beamer Serverraum 2021-09 899,00
+
+45 Drucker Raum 1.01 2022-10 640,00
+
+46 Dockingstation Raum 1.02 2023-11 189,00
+
+47 Monitor 27 Zoll Raum 2.14 2024-12 349,00
+
+48 Notebook Empfang 2019-01 1.290,00
+Summe 60.060,00
+
+Dokument-ID: MF-2026-0815 - Version 3.2 Seite 16
+
+
+===== Seite 18 =====
+Musterfirma GmbH - Stolperstein-Testdokument
+
+17. Gedrehter Text und Schreibrichtung
+
+A) und B) Gedrehte Elemente
+Dieser Absatz ist ganz normaler Fließtext. Am rechten Rand steht eine
+gedrehte Randnotiz, darunter ein kopfstehender Hinweis.
+
+U9M9IUM }YdIU SMIg
+
+C) Hebräisch, in visueller Reihenfolge gespeichert
+
+D7IV DI7W
+
+Dokument-ID: MF-2026-0815 - Version 3.2
+
+VERTRAULICH -— nur für den internen Gebrauch
+
+Seite 17
+
+Entwurf — Freigabe durch die Rechtsabteilung ausstehend
+
+===== Seite 19 =====
+Musterfirma GmbH - Stolperstein-Testdokument VERTRAULICH — nur für den internen Gebrauch
+
+18. Doppelter Text (Pseudo-Fett, Schatten)
+
+A) Pseudo-Fettdruck: dreimal versetzt gezeichnet
+
+Warnung: Gerät nicht öffnen!
+
+Bei Zuwiderhandlung erlischt die Garantie.
+
+B) Schatten: grauer Text versetzt hinter schwarzem Text
+
+Jahresabschluss 2025
+
+Dokument-ID: MF-2026-0815 - Version 3.2 Seite 18
+
+===== Seite 20 =====
+Musterfirma GmbH - Stolperstein-Testdokument VERTRAULICH — nur für den internen Gebrauch
+
+19. Wasserzeichen
+
+Die Arbeitszeit beträgt 40 Stunden pro Woche. Gleitzeit ist zwischen 7 und 20 Uhr möglich,
+die Kernarbeitszeit liegt zwischen 10 und 15 Uhr.
+
+Überstunden werden auf einem Arbeitszeitkonto erfasst und können in Absprache mit der
+Führungskraft abgebaut werden. Mehr als 50 Plusstunden sind nicht zulässig.
+
+Dokument-ID: MF-2026-0815 - Version 3.2 Seite 19
+
+===== Seite 21 =====
+Musterfirma GmbH - Stolperstein-Testdokument VERTRAULICH — nur für den internen Gebrauch
+
+20. Satz über die Seitengrenze
+Diese Seite ist mit Absätzen gefüllt, damit der letzte Satz auf die nächste Seite umbricht. Die
+Regelung gilt für alle Standorte gleichermaßen und wurde mit dem Betriebsrat abgestimmt.
+
+Diese Seite ist mit Absätzen gefüllt, damit der letzte Satz auf die nächste Seite umbricht. Die
+Regelung gilt für alle Standorte gleichermaßen und wurde mit dem Betriebsrat abgestimmt.
+
+Diese Seite ist mit Absätzen gefüllt, damit der letzte Satz auf die nächste Seite umbricht. Die
+Regelung gilt für alle Standorte gleichermaßen und wurde mit dem Betriebsrat abgestimmt.
+
+Diese Seite ist mit Absätzen gefüllt, damit der letzte Satz auf die nächste Seite umbricht. Die
+Regelung gilt für alle Standorte gleichermaßen und wurde mit dem Betriebsrat abgestimmt.
+
+Diese Seite ist mit Absätzen gefüllt, damit der letzte Satz auf die nächste Seite umbricht. Die
+Regelung gilt für alle Standorte gleichermaßen und wurde mit dem Betriebsrat abgestimmt.
+
+Diese Seite ist mit Absätzen gefüllt, damit der letzte Satz auf die nächste Seite umbricht. Die
+Regelung gilt für alle Standorte gleichermaßen und wurde mit dem Betriebsrat abgestimmt.
+
+Diese Seite ist mit Absätzen gefüllt, damit der letzte Satz auf die nächste Seite umbricht. Die
+Regelung gilt für alle Standorte gleichermaßen und wurde mit dem Betriebsrat abgestimmt.
+
+Diese Seite ist mit Absätzen gefüllt, damit der letzte Satz auf die nächste Seite umbricht. Die
+Regelung gilt für alle Standorte gleichermaßen und wurde mit dem Betriebsrat abgestimmt.
+
+Diese Seite ist mit Absätzen gefüllt, damit der letzte Satz auf die nächste Seite umbricht. Die
+Regelung gilt für alle Standorte gleichermaßen und wurde mit dem Betriebsrat abgestimmt.
+
+Diese Seite ist mit Absätzen gefüllt, damit der letzte Satz auf die nächste Seite umbricht. Die
+Regelung gilt für alle Standorte gleichermaßen und wurde mit dem Betriebsrat abgestimmt.
+
+Diese Seite ist mit Absätzen gefüllt, damit der letzte Satz auf die nächste Seite umbricht. Die
+Regelung gilt für alle Standorte gleichermaßen und wurde mit dem Betriebsrat abgestimmt.
+
+Diese Seite ist mit Absätzen gefüllt, damit der letzte Satz auf die nächste Seite umbricht. Die
+Regelung gilt für alle Standorte gleichermaßen und wurde mit dem Betriebsrat abgestimmt.
+
+Wichtig: Die Kündigung eines Vertrags ist nur wirksam, wenn sie schriftlich und unter*
+
+* Gilt nur für Verträge, die nach dem 1. Januar 2024 geschlossen wurden.
+
+Dokument-ID: MF-2026-0815 - Version 3.2 Seite 20
+
+===== Seite 22 =====
+Musterfirma GmbH - Stolperstein-Testdokument VERTRAULICH — nur für den internen Gebrauch
+
+Angabe der Vertragsnummer erfolgt sowie spätestens sechs Wochen vor Ablauf der
+Mindestlaufzeit beim Kundenservice eingeht.
+
+Hier beginnt ein neuer Absatz auf der zweiten Seite.
+
+Dokument-ID: MF-2026-0815 - Version 3.2 Seite 21
+
+===== Seite 23 =====
+Musterfirma GmbH - Stolperstein-Testdokument VERTRAULICH — nur für den internen Gebrauch
+
+21. Text als Kurven
+
+Der folgende Hinweis ist kein Text, sondern eine Grafik aus Pfaden:
+
+Pfade:
+Kündigungsfrist: 3 Monate zum Quartalsende
+
+Hotline: 0800 123 456 (kostenfrei)
+
+Dokument-ID: MF-2026-0815 - Version 3.2 Seite 22
+
+===== Seite 24 =====
+Musterfirma GmbH - Stolperstein-Testdokument VERTRAULICH — nur für den internen Gebrauch
+
+22. Gescannte Seite ohne Text
+
+Musterfirma GmbH - Personalabteilung
+Bescheinigung
+
+Hiermit bestätigen wir, dass Frau Erika Mustermann
+seit dem 1. April 2019 in unserem Unternehmen als
+
+Projektleiterin in Vollzeit beschäftigt ist.
+
+Köln, den 14. Februar 2026
+
+Dokument-ID: MF-2026-0815 - Version 3.2 Seite 23
+
+===== Seite 25 =====
+Musterfirma GmbH - Stolperstein-Testdokument VERTRAULICH — nur für den internen Gebrauch
+
+23. Scan mit fehlerhaftem OCR-Layer
+
+Rechnung Nr. 2026-0417
+Rechnungsbetrag: 1.234,56 EUR
+Zahlbar bis: 15.05.2026
+
+IBAN: DE89 3704 0044 0532 0130 00
+
+Verwendungszweck: Kundennummer 88172
+
+Dokument-ID: MF-2026-0815 - Version 3.2 Seite 24
+
+===== Seite 26 =====
+Musterfirma GmbH - Stolperstein-Testdokument VERTRAULICH - nur für den internen Gebrauch
+
+24. Diagramme und Bilder
+
+A) Balkendiagramm
+Abbildung 1: Neukunden je Quartal 2025
+
+25
+
+20
+
+B) Screenshot einer Tabelle
+
+Tarif Preis/Monat
+Basis 9,99 €
+Pro 19,99 €
+
+Enterprise auf Anfrage
+
+Dokument-ID: MF-2026-0815 - Version 3.2 Seite 25
+
+===== Seite 27 =====
+Musterfirma GmbH - Stolperstein-Testdokument VERTRAULICH — nur für den internen Gebrauch
+
+25. Formularfelder und Kommentare
+
+Name:
+Eintrittsdatum:
+Abteilung:
+Teilzeit:
+
+Unterschrift: =
+
+Dokument-ID: MF-2026-0815 - Version 3.2 Seite 26
+
+===== Seite 28 =====
+Musterfirma GmbH - Stolperstein-Testdokument VERTRAULICH — nur für den internen Gebrauch
+
+26. Versteckter Text
+
+Bewerbung als Softwareentwicklerin
+
+Ich bringe drei Jahre Erfahrung in der Entwicklung mit Python und TypeScript mit. In
+meinem letzten Projekt habe ich eine Schnittstelle zur Buchhaltung umgesetzt.
+
+Auf dieser Seite steht mehr Text, als man sieht.
+
+Dokument-ID: MF-2026-0815 - Version 3.2 Seite 27
+
+===== Seite 29 =====
+Musterfirma GmbH - Stolperstein-Testdokument VERTRAULICH — nur für den internen Gebrauch
+
+27. Schwärzung
+
+Auszug aus der Gehaltsabrechnung (personenbezogene Daten geschwärzt):
+
+Mitarbeiter:
+B
+Bruttogehalt: _
+
+Steuerklasse: ]]
+
+Dokument-ID: MF-2026-0815 - Version 3.2 Seite 28
+
+===== Seite 30 =====
+Musterfirma GmbH - Stolperstein-Testdokument VERTRAULICH — nur für den internen Gebrauch
+
+28. Inkrementelles Update
+
+Der Vertragswert beträgt 75.000 EUR netto. Die Laufzeit beträgt 24 Monate.
+
+Dokument-ID: MF-2026-0815 - Version 3.2 Seite 29
+
+===== Seite 31 =====
+Musterfirma GmbH - Stolperstein-Testdokument VERTRAULICH — nur für den internen Gebrauch
+
+29. Text in Form-XObjects
+
+A) Direkt auf der Seite
+Dieser Absatz steht direkt im Content-Stream der Seite.
+
+B) In einem Form-XObject, skaliert
+
+Dieser Absatz steckt in einem Form-XObject, das auf 85 Prozent verkleinert eingebunden wird, So wie es
+Werkzeuge zum Zusammenfügen, Stempeln oder Verkleinern von Seiten tun. Die Kündigungsfrist beträgt
+drei Monate zum Quartalsende.
+
+Dokument-ID: MF-2026-0815 - Version 3.2 Seite 30
+
+===== Seite 32 =====
+Das Ising-Modell beschreibt Spins o; € {-1,+1} auf einem Gitter. Die Energie einer Kon-
+figuration ist durch den Hamiltonoperator gegeben:
+
+N
+H(o)= —JZ 0;0j — hch
+
+(4,5) i=1
+
+Für die Zustandssumme gilt
+Z;Ze—ß7‘l(cr)7 ß: —1
+{v}
+und die Magnetisierung pro Spin ergibt sich zu
+1
+
+M N;<C”> - NB ön
+
+
+===== Seite 33 =====
+Das Ising-Modell beschreibt Spins o0; € {-1,+1} auf einem Gitter. Die Energie einer Kon-
+figuration ist durch den Hamiltonoperator gegeben:
+
+N
+H(o0)= —JZog-oy- —hZoy-
+(i,j) i=1
+
+Für die Zustandssumme gilt
+
+1
+Z O, B
+{o}
+und die Magnetisierung pro Spin ergibt sich zu
+1 — 1 ölnZ
+m- 2 R
+
+i=
+
+
+===== Seite 34 =====
+Das Ising-Modell beschreibt Spins o0; € {-1,+1} auf einem Gitter. Die Energie einer Kon-
+figuration ist durch den Hamiltonoperator gegeben:
+
+N
+H(o0) = —J Z 0i0j — hZW
+(4,3) i=1
+Für die Zustandssumme gilt
+Z:Ze—ß7'l(€f)7 B = —
+{}
+
+und die Magnetisierung pro Spin ergibt sich zu
+
+
+===== Seite 35 =====
+Musterfirma GmbH - Betriebsvereinbarung Mobiles Arbeiten - Entwurf
+
+Betriebsvereinbarung Mobiles Arbeiten
+
+1 Geltungsbereich
+
+ijese Vereinbarung gilt für alle Beschäftigten der Musterfirma GmbH an den Standorten
+Köln und Bonn. Ausgenommen sind Auszubildende im ersten Ausbildungsjahr‘ sowie
+Beschäftigte in der Produktion.
+
+2 Umfang
+
+\ Beschäftigte können bis zu zweidrei Tage pro Woche mobil arbeiten. Wichtig: Die Vereinbarung tritt
+Die Abstimmung erfolgt im Team und ist im Kalender einzutragen. <m 1. März 2026 in Kraft.
+
+An mindestens einem festen Präsenztag pro Woche ist das gesamte
+
+Team vor Ort, damit Besprechungen und Einarbeitungen persönlich stattfinden können.
+
+3 Voraussetzungen
+
+Mobiles Arbeiten setzt voraus, dass
+a) die Tätigkeit dafür geeignet ist,
+b) ein dienstliches Notebook mit VPN-Zugang vorhanden ist und
+c) die Vorgaben zum Datenschutz* eingehalten werden.
+
+Köln, den 02.10.26
+
+1Für Auszubildende gilt die gesonderte Regelung in Anlage 2.
+
+2Siehe Datenschutzrichtlinie, Abschnitt 4.
+
+Seite 1 von 1
+
+===== Seite 36 =====
+Startseite Personal Reisen IT-Service Kontakt
+
+REISERICHTLINIE 2026
+
+GÜLTIG AB 1. JANUAR 2026 : HERAUSGEGEBEN VON DER PERSONALABTEILUNG
+
+Übernachtungskosten werden bis zu einem
+Betrag von 120 Euro pro Nacht erstattet, in
+Reiseportal zu beantragen und durch die München, Frankfurt und Hamburg bis zu
+Führungskraft freizugeben. Die Auswahl 150 Euro. Für
+des Verkehrsmittels erfolgt nach den verpflegungsmehraufwendungen gelten die
+Grundsätzen der Wirtschaftlichkeit und der steuerlichen Pauschalen. Die Erstattung
+Effizienz; Bahnreisen haben bei Strecken von Taxifahrten ist auf begründete
+unter 500 Kilometern _ dgrundsätzlich Ausnahmefälle beschränkt.
+
+Vorrang vor _Flügen. Die _ offizielle
+
+Abrechnung erfolgt ausschließlich über das
+
+Reisekostenformular.
+
+Dienstreisen sind vor Reiseantritt im
+
+Hinweis: Reisen in Länder mit Reisewarnung des Auswärtigen Amtes müssen zusätzlich
+von der Geschäftsführung genehmigt werden.
+
+Ablauf der Abrechnung
+
+1. Belege innerhalb von vier Wochen nach Reiseende hochladen.
+2. Reisekostenformular ausfüllen und digital signieren.
+3. Freigabe durch die Führungskraft abwarten.
+
+Erstattungssätze
+
+_ Kostenart __ [ Inland | Ausland _
+Übernachtung (pro Nacht) 120 €
+
+Kilometerpauschale (Pkw) 0,30 € 0,30 €
+
+Kontakt
+
+@ Fragen beantwortet das Reiseteam unter reisen@musterfirma.example
+
+Hotline: 0800 555 0199
+
+Wir verwenden Cookies, um die Nutzung des Intranets zu analysieren. Mit der weiteren Nutzung stimmen Sie dem zu.
+
+[Akzeptieren] [Ablehnen]
+
+
+===== Seite 37 =====
+Startseite Personal Reisen IT-Service Kontakt
+
+REISERICHTLINIE 2026
+
+GÜLTIG AB 1. JANUAR 2026 * HERAUSGEGEBEN VON DER PERSONALABTEILUNG
+
+Übernachtungskosten werden bis zu einem
+; i Betrag von 120 Euro pro Nacht erstattet, in
+Reiseportal zu beantragen und durch die München, Frankfurt und Hamburg bis zu
+Führungskraft freizugeben. Die Auswahl 150 Euro. Für
+des Verkehrsmittels erfolgt nach den — verpflegungsmehraufwendungen gelten die
+Grundsätzen der Wirtschaftlichkeit und der steuerlichen Pauschalen. Die Erstattung
+Effizienz; Bahnreisen haben bei Strecken von Taxifahrten ist auf begründete
+unter 500 Kilometern _ grundsätzlich Ausnahmefälle beschränkt.
+
+Vorrang vor Flügen. Die _ offizielle
+
+Abrechnung erfolgt ausschließlich über das
+
+Reisekostenformular.
+
+Dienstreisen sind vor Reiseantritt im
+
+Hinweis: Reisen in Länder mit Reisewarnung des Auswärtigen Amtes müssen zusätzlich
+von der Geschäftsführung genehmigt werden.
+
+Ablauf der Abrechnung
+
+1. Belege innerhalb von vier Wochen nach Reiseende hochladen.
+2. Reisekostenformular ausfüllen und digital signieren.
+3. Freigabe durch die Führungskraft abwarten.
+
+Erstattungssätze
+
+Kostenart Inland Ausland
+Übernachtung (pro Nacht) 120 € | nach Land
+
+Verpflegung (ganzer Tag) 28 € | nach Land
+Kilometerpauschale (Pkw) 0,30 € 0,30 €
+Kontakt
+
+@® Fragen beantwortet das Reiseteam unter reisen@musterfirma.example
+
+Hotline: 0800 555 0199
+
+Wir verwenden Cookies, um die Nutzung des Intranets zu analysieren. Mit der weiteren Nutzung stimmen Sie dem zu.
+
+[Akzeptieren] [Ablehnen]
+

@@ -1,0 +1,23 @@
+[project]
+name = "pdf-stolpersteine"
+version = "0.1.0"
+description = "Erzeugt ein Test-PDF voller Stolpersteine für die Textextraktion"
+requires-python = ">=3.12"
+license = "MIT"
+dependencies = [
+    "reportlab>=4.2",
+    "pikepdf>=9.0",
+    "pillow>=10.0",
+    "fonttools>=4.50",
+    "pypdf>=5.0",
+    "pdfminer.six>=20240706",
+    "pymupdf>=1.24",
+]
+
+[dependency-groups]
+parsers = [
+    "docling>=2.132.0",
+    "markitdown[pdf]>=0.1.8",
+    "pytesseract>=0.3.13",
+    "unstructured[pdf]>=0.27",
+]

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Betriebsvereinbarung als Flat-ODT (LibreOffice/Word-typisch), siehe STOLPERSTEINE.md#office_export.
+  Enthält: Kopf-/Fußzeile mit Seitenfeldern, automatische Kapitelnummerierung, Initiale,
+  Fußnoten, Änderungsverfolgung (Löschung + Einfügung), Kommentar, verborgenen Text,
+  schwebenden Textrahmen, automatisch nummerierte Liste und ein Datumsfeld.
+  Der Inhalt muss mit GROUND_TRUTH in pitfalls/office_export.py übereinstimmen.
+-->
+<office:document xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0"
+  xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0"
+  xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0"
+  xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0"
+  xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0"
+  xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0"
+  xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0"
+  xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0"
+  office:version="1.3" office:mimetype="application/vnd.oasis.opendocument.text">
+
+ <office:settings>
+  <config:config-item-set config:name="ooo:configuration-settings">
+   <config:config-item config:name="ShowChanges" config:type="boolean">true</config:config-item>
+  </config:config-item-set>
+ </office:settings>
+
+ <office:font-face-decls>
+  <style:font-face style:name="Liberation Serif" svg:font-family="'Liberation Serif'" style:font-family-generic="roman"/>
+  <style:font-face style:name="Liberation Sans" svg:font-family="'Liberation Sans'" style:font-family-generic="swiss"/>
+ </office:font-face-decls>
+
+ <office:styles>
+  <style:default-style style:family="paragraph">
+   <style:paragraph-properties fo:margin-bottom="0.2cm"/>
+   <style:text-properties style:font-name="Liberation Serif" fo:font-size="11pt" fo:language="de" fo:country="DE"/>
+  </style:default-style>
+  <style:style style:name="Standard" style:family="paragraph">
+   <style:paragraph-properties fo:text-align="justify" fo:line-height="130%"/>
+  </style:style>
+  <style:style style:name="Title" style:family="paragraph">
+   <style:paragraph-properties fo:text-align="center" fo:margin-bottom="0.4cm"/>
+   <style:text-properties style:font-name="Liberation Sans" fo:font-size="18pt" fo:font-weight="bold"/>
+  </style:style>
+  <style:style style:name="Heading_20_1" style:display-name="Heading 1" style:family="paragraph"
+    style:default-outline-level="1">
+   <style:paragraph-properties fo:margin-top="0.4cm" fo:margin-bottom="0.2cm" fo:keep-with-next="always"/>
+   <style:text-properties style:font-name="Liberation Sans" fo:font-size="13pt" fo:font-weight="bold"/>
+  </style:style>
+  <style:style style:name="Footnote" style:family="paragraph">
+   <style:text-properties fo:font-size="9pt"/>
+  </style:style>
+  <style:style style:name="Header" style:family="paragraph">
+   <style:paragraph-properties fo:text-align="end"/>
+   <style:text-properties style:font-name="Liberation Sans" fo:font-size="8pt" fo:color="#666666"/>
+  </style:style>
+  <style:style style:name="Footer" style:family="paragraph">
+   <style:paragraph-properties fo:text-align="center"/>
+   <style:text-properties style:font-name="Liberation Sans" fo:font-size="8pt" fo:color="#666666"/>
+  </style:style>
+  <style:style style:name="Frame_20_contents" style:display-name="Frame contents" style:family="paragraph">
+   <style:text-properties style:font-name="Liberation Sans" fo:font-size="9pt"/>
+  </style:style>
+  <text:outline-style style:name="Outline">
+   <text:outline-level-style text:level="1" style:num-format="1" style:num-suffix=" "/>
+  </text:outline-style>
+  <text:list-style style:name="Buchstaben">
+   <text:list-level-style-number text:level="1" style:num-format="a" style:num-suffix=")">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="1cm" fo:text-indent="-0.6cm" fo:margin-left="1cm"/>
+    </style:list-level-properties>
+   </text:list-level-style-number>
+  </text:list-style>
+  <text:notes-configuration text:note-class="footnote" style:num-format="1" text:start-value="0" text:footnotes-position="page" text:start-numbering-at="document"/>
+ </office:styles>
+
+ <office:automatic-styles>
+  <style:style style:name="Initiale" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties>
+    <style:drop-cap style:lines="3" style:length="1" style:distance="0.1cm"/>
+   </style:paragraph-properties>
+  </style:style>
+  <style:style style:name="Verborgen" style:family="text">
+   <style:text-properties text:display="none"/>
+  </style:style>
+  <style:style style:name="Rahmen" style:family="graphic">
+   <style:graphic-properties fo:border="0.5pt solid #e0a800" draw:fill="solid" draw:fill-color="#fff4d6"
+     fo:background-color="#fff4d6" fo:padding="0.15cm" fo:margin-left="0.3cm"
+     style:wrap="parallel" style:number-wrapped-paragraphs="no-limit" style:run-through="foreground"
+     style:horizontal-pos="right" style:horizontal-rel="paragraph"
+     style:vertical-pos="top" style:vertical-rel="paragraph"/>
+  </style:style>
+  <style:page-layout style:name="Seite">
+   <style:page-layout-properties fo:page-width="21cm" fo:page-height="29.7cm"
+     fo:margin-top="1.5cm" fo:margin-bottom="1.5cm" fo:margin-left="2.5cm" fo:margin-right="2.5cm"/>
+   <style:header-style><style:header-footer-properties fo:min-height="0.8cm" fo:margin-bottom="0.4cm"/></style:header-style>
+   <style:footer-style><style:header-footer-properties fo:min-height="0.8cm" fo:margin-top="0.4cm"/></style:footer-style>
+  </style:page-layout>
+ </office:automatic-styles>
+
+ <office:master-styles>
+  <style:master-page style:name="Standard" style:page-layout-name="Seite">
+   <style:header><text:p text:style-name="Header">Musterfirma GmbH · Betriebsvereinbarung Mobiles Arbeiten · Entwurf</text:p></style:header>
+   <style:footer><text:p text:style-name="Footer">Seite <text:page-number text:select-page="current">1</text:page-number> von <text:page-count>1</text:page-count></text:p></style:footer>
+  </style:master-page>
+ </office:master-styles>
+
+ <office:body>
+  <office:text>
+   <text:tracked-changes>
+    <text:changed-region text:id="ct1">
+     <text:deletion><office:change-info><dc:creator>A. Weber</dc:creator><dc:date>2026-02-10T09:12:00</dc:date></office:change-info>
+      <text:p>zwei</text:p></text:deletion>
+    </text:changed-region>
+    <text:changed-region text:id="ct2">
+     <text:insertion><office:change-info><dc:creator>A. Weber</dc:creator><dc:date>2026-02-10T09:12:00</dc:date></office:change-info></text:insertion>
+    </text:changed-region>
+   </text:tracked-changes>
+
+   <text:p text:style-name="Title">Betriebsvereinbarung Mobiles Arbeiten</text:p>
+
+   <text:h text:style-name="Heading_20_1" text:outline-level="1">Geltungsbereich</text:h>
+   <text:p text:style-name="Initiale">Diese Vereinbarung gilt für alle Beschäftigten der Musterfirma GmbH an den Standorten Köln und Bonn. Ausgenommen sind Auszubildende im ersten Ausbildungsjahr<text:note text:id="ftn1" text:note-class="footnote"><text:note-citation>1</text:note-citation><text:note-body><text:p text:style-name="Footnote">Für Auszubildende gilt die gesonderte Regelung in Anlage 2.</text:p></text:note-body></text:note> sowie Beschäftigte in der Produktion.<text:span text:style-name="Verborgen"> Interner Hinweis: Der Betriebsrat ist noch nicht informiert.</text:span></text:p>
+
+   <text:h text:style-name="Heading_20_1" text:outline-level="1">Umfang</text:h>
+   <text:p text:style-name="Standard"><draw:frame draw:style-name="Rahmen" draw:name="Hinweis" text:anchor-type="paragraph" svg:width="5cm" svg:height="1.6cm"><draw:text-box><text:p text:style-name="Frame_20_contents">Wichtig: Die Vereinbarung tritt am 1. März 2026 in Kraft.</text:p></draw:text-box></draw:frame>Beschäftigte können bis zu <text:change text:change-id="ct1"/><text:change-start text:change-id="ct2"/>drei<text:change-end text:change-id="ct2"/> Tage pro Woche mobil arbeiten<office:annotation><dc:creator>A. Weber</dc:creator><dc:date>2026-02-10T09:15:00</dc:date><text:p>Mit der Geschäftsführung abgestimmt? Ursprünglich waren zwei Tage geplant.</text:p></office:annotation>. Die Abstimmung erfolgt im Team und ist im Kalender einzutragen. An mindestens einem festen Präsenztag pro Woche ist das gesamte Team vor Ort, damit Besprechungen und Einarbeitungen persönlich stattfinden können.</text:p>
+
+   <text:h text:style-name="Heading_20_1" text:outline-level="1">Voraussetzungen</text:h>
+   <text:p text:style-name="Standard">Mobiles Arbeiten setzt voraus, dass</text:p>
+   <text:list text:style-name="Buchstaben">
+    <text:list-item><text:p text:style-name="Standard">die Tätigkeit dafür geeignet ist,</text:p></text:list-item>
+    <text:list-item><text:p text:style-name="Standard">ein dienstliches Notebook mit VPN-Zugang vorhanden ist und</text:p></text:list-item>
+    <text:list-item><text:p text:style-name="Standard">die Vorgaben zum Datenschutz<text:note text:id="ftn2" text:note-class="footnote"><text:note-citation>2</text:note-citation><text:note-body><text:p text:style-name="Footnote">Siehe Datenschutzrichtlinie, Abschnitt 4.</text:p></text:note-body></text:note> eingehalten werden.</text:p></text:list-item>
+   </text:list>
+
+   <text:p text:style-name="Standard">Köln, den <text:date text:date-value="2026-02-10">10.02.2026</text:date></text:p>
+  </office:text>
+ </office:body>
+</office:document>
