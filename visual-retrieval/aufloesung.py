@@ -1,11 +1,12 @@
 """Liegt es an der Auflösung? Bettet die Seiten mit kleiner Schrift noch einmal mit mehr
 Bild-Tokens ein und wertet die zugehörigen Fragen neu aus.
 
-    uv run aufloesung.py qwen3vl 4      # vierfache Zahl der Bild-Tokens (doppelte dpi)
-    uv run aufloesung.py colqwen2 4
+    uv run aufloesung.py colqwen2 4     # 4 x 768 Bild-Tokens, also doppelte dpi
+    uv run aufloesung.py qwen3vl 4      # ebenfalls 4 x 768 = 3072 Bild-Tokens, das 2,4-Fache
+                                        # seiner Voreinstellung von rund 1280
 
 Neu eingebettet werden nur die Fußnoten-Seiten und die Blätter mit zwei und vier Seiten. Alle
-anderen Seiten bleiben wie in data/emb/ bei rund 768 Bild-Tokens. Bei den Modellen mit vielen
+anderen Seiten bleiben wie in data/emb/ bei der Voreinstellung des Modells. Bei den Modellen mit vielen
 Vektoren ist das ein Vorteil für die neu eingebetteten Seiten, weil MaxSim über mehr Patches
 ein höheres Maximum findet. Die Zahlen sind deshalb eine Diagnose und kein fairer Vergleich.
 Ergebnis: data/aufloesung/<name>_x<faktor>.pt (fortsetzbar) und eine Tabelle auf der Konsole.

@@ -3,7 +3,6 @@
     uv run embed_visual.py colmodernvbert
     uv run embed_visual.py colqwen2
     uv run embed_visual.py qwen3vl      # Single-Vector
-    uv run embed_visual.py qwen3vl_default  # dasselbe ohne Begrenzung der Bild-Tokens
     uv run embed_visual.py clip         # Single-Vector, Baseline
 
 Seiten: data/seiten/ (Stolpersteine für die Textextraktion und Ablenker) und
@@ -28,16 +27,15 @@ FRAGEN = [HERE / "fragen.json", HERE / "fragen_visuelle_stolpersteine.json"]
 MODELS = {
     "colmodernvbert": ("multi", "ModernVBERT/colmodernvbert", {}),
     "colqwen2": ("multi", "vidore/colqwen2-v1.0", {}),
-    # fp32 ist auf CPUs ohne bf16-Einheiten deutlich schneller. Bild-Token wie bei ColQwen2
-    # auf 768 begrenzt (Qwen3-VL: 32 px pro Token nach dem Merge).
+    # fp32 ist auf CPUs ohne bf16-Einheiten deutlich schneller. Beide Qwen-Modelle laufen mit
+    # der Voreinstellung ihres Prozessors: ColQwen2 mit höchstens 768 Bild-Tokens, Qwen3-VL mit
+    # höchstens 1.310.720 px (rund 1280 Bild-Tokens, 32 px pro Token nach dem Merge).
     "qwen3vl": ("single", "Qwen/Qwen3-VL-Embedding-2B", {"dtype": torch.float32}),
-    # Zum Vergleich ohne die Begrenzung, also mit der Voreinstellung des Modells (1.310.720 px).
-    "qwen3vl_default": ("single", "Qwen/Qwen3-VL-Embedding-2B", {"dtype": torch.float32}),
     "clip": ("clip", None, {}),
 }
 
 
-def load(kind, model_id, kwargs, name=None):
+def load(kind, model_id, kwargs):
     if kind == "multi":
         from sentence_transformers import MultiVectorEncoder
 
@@ -48,8 +46,7 @@ def load(kind, model_id, kwargs, name=None):
         return SentenceTransformer("clip-ViT-B-32", device="cpu"), SentenceTransformer(
             "sentence-transformers/clip-ViT-B-32-multilingual-v1", device="cpu"
         )
-    pk = {} if name == "qwen3vl_default" else {"max_pixels": 768 * 32 * 32}
-    return SentenceTransformer(model_id, device="cpu", model_kwargs=kwargs, processor_kwargs=pk)
+    return SentenceTransformer(model_id, device="cpu", model_kwargs=kwargs)
 
 
 def main(name: str) -> None:
@@ -64,7 +61,7 @@ def main(name: str) -> None:
     if not files and not fragen:
         print(name, "ist vollständig")
         return
-    model = load(kind, model_id, kwargs, name)
+    model = load(kind, model_id, kwargs)
     if kind == "clip":
         img_model, txt_model = model
     if fragen:

@@ -24,8 +24,9 @@ immer in allen 171 Seiten.
 4. `uv run embed_visual.py <clip|colmodernvbert|colqwen2|qwen3vl>` bettet alle Seiten und alle
    Fragen ein und ist fortsetzbar (ColQwen2 ca. 30 bis 40 s/Seite auf der CPU).
    CLIP nutzt für die deutschen Fragen den mehrsprachigen Text-Encoder
-   `clip-ViT-B-32-multilingual-v1`. Qwen3-VL-Embedding ist wie ColQwen2 auf rund 768
-   Bild-Tokens pro Seite begrenzt, damit es auf der CPU in vertretbarer Zeit fertig wird.
+   `clip-ViT-B-32-multilingual-v1`. Beide Qwen-Modelle laufen mit der Voreinstellung
+   ihres Prozessors: ColQwen2 mit höchstens 768 Bild-Tokens pro Seite, Qwen3-VL-Embedding mit
+   rund 1280 (ca. 37 s/Seite auf der CPU).
 5. `uv run evaluate.py`: Fragen aus `fragen.json` (Stolpersteine für die Textextraktion),
    Recall@1/@3, schreibt `data/ergebnisse.json`.
 6. `uv run evaluate_visuelle_stolpersteine.py`: Fragen aus `fragen_visuelle_stolpersteine.json`,

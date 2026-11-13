@@ -35,7 +35,7 @@ def main():
     for name, cls, mid, kw in [
         ("colmodernvbert", MultiVectorEncoder, "ModernVBERT/colmodernvbert", {}),
         ("colqwen2", MultiVectorEncoder, "vidore/colqwen2-v1.0", {}),
-        ("qwen3vl", SentenceTransformer, "Qwen/Qwen3-VL-Embedding-2B", {"processor_kwargs": {"max_pixels": 768 * 32 * 32}}),
+        ("qwen3vl", SentenceTransformer, "Qwen/Qwen3-VL-Embedding-2B", {}),
     ]:
         model = cls(mid, device="cpu", model_kwargs={"dtype": torch.float32}, **kw)
         e = torch.load(DATA / "emb" / f"{name}.pt", weights_only=False)
