@@ -14,6 +14,13 @@ die Ground Truth [`out/stolpersteine.ground_truth.md`](out/stolpersteine.ground_
 die Ausgaben aller Extraktoren liegen fertig im Repository, der Vergleich in
 [`out/vergleich.md`](out/vergleich.md).
 
+Für den Folgeartikel über visuelles Retrieval liegt im Wurzelverzeichnis außerdem
+[`testdokument-visual-retrieval.pdf`](testdokument-visual-retrieval.pdf) mit 171 Seiten: die 37
+Seiten aus `out/stolpersteine.pdf`, 30 Seiten mit Stolpersteinen für visuelle Modelle (kleine
+Schrift, mehrere Seiten pro Blatt, verwechselbare Rechnungsnummern, blasser und gedrehter Text,
+alle mit einwandfreiem Textlayer) und als Ablenker neun Arbeitsgesetze von
+gesetze-im-internet.de mit zusammen 104 Seiten.
+
 ## Schnellstart
 
 ```bash
