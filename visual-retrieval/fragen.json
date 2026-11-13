@@ -1,0 +1,450 @@
+[
+ {
+  "gruppe": "zeichen",
+  "stein": "ligaturen",
+  "seiten": [
+   2
+  ],
+  "frage": "Wurde die Auftragsfinanzierung auf Effizienz geprüft?"
+ },
+ {
+  "gruppe": "zeichen",
+  "stein": "tounicode_fehlt",
+  "seiten": [
+   3
+  ],
+  "frage": "Wer ist die Ansprechpartnerin und welche Durchwahl hat sie?"
+ },
+ {
+  "gruppe": "zeichen",
+  "stein": "tounicode_fehlt",
+  "seiten": [
+   3
+  ],
+  "frage": "Zu welchen Zeiten ist der Kundenservice erreichbar?"
+ },
+ {
+  "gruppe": "zeichen",
+  "stein": "tounicode_falsch",
+  "seiten": [
+   4
+  ],
+  "frage": "Wie viel Rabatt gibt es bei Zahlung binnen 10 Tagen?"
+ },
+ {
+  "gruppe": "zeichen",
+  "stein": "tounicode_falsch",
+  "seiten": [
+   4
+  ],
+  "frage": "Innerhalb welcher Frist muss netto gezahlt werden?"
+ },
+ {
+  "gruppe": "zeichen",
+  "stein": "nullbytes",
+  "seiten": [
+   5
+  ],
+  "frage": "Welche Adresse in Düsseldorf wird genannt?"
+ },
+ {
+  "gruppe": "zeichen",
+  "stein": "nullbytes",
+  "seiten": [
+   5
+  ],
+  "frage": "Welche Gebühren sind im März fällig?"
+ },
+ {
+  "gruppe": "zeichen",
+  "stein": "type3_font",
+  "seiten": [
+   6
+  ],
+  "frage": "Auf wie viele Monate verlängert sich die Garantie?"
+ },
+ {
+  "gruppe": "zeichen",
+  "stein": "unicode_doppelgaenger",
+  "seiten": [
+   7
+  ],
+  "frage": "Ist Herr Müller dieselbe Person?"
+ },
+ {
+  "gruppe": "zeichen",
+  "stein": "leerzeichen",
+  "seiten": [
+   8
+  ],
+  "frage": "Bis wann ist das Angebot gültig?"
+ },
+ {
+  "gruppe": "zeichen",
+  "stein": "leerzeichen",
+  "seiten": [
+   8
+  ],
+  "frage": "Sind Rechnungsadresse und Lieferadresse identisch?"
+ },
+ {
+  "gruppe": "zeichen",
+  "stein": "schrift_nicht_eingebettet",
+  "seiten": [
+   9
+  ],
+  "frage": "Fallen für Teillieferungen zusätzliche Kosten an?"
+ },
+ {
+  "gruppe": "zeichen",
+  "stein": "text_als_kurven",
+  "seiten": [
+   23
+  ],
+  "frage": "Wie lautet die kostenfreie Hotline?"
+ },
+ {
+  "gruppe": "bild",
+  "stein": "scan",
+  "seiten": [
+   24
+  ],
+  "frage": "Als was ist Frau Mustermann beschäftigt?"
+ },
+ {
+  "gruppe": "bild",
+  "stein": "scan",
+  "seiten": [
+   24
+  ],
+  "frage": "Wann wurde die Bescheinigung der Personalabteilung ausgestellt?"
+ },
+ {
+  "gruppe": "bild",
+  "stein": "ocr_layer",
+  "seiten": [
+   25
+  ],
+  "frage": "Wie hoch ist der Betrag der Rechnung Nr. 2026-0417?"
+ },
+ {
+  "gruppe": "bild",
+  "stein": "ocr_layer",
+  "seiten": [
+   25
+  ],
+  "frage": "Bis wann ist die Rechnung Nr. 2026-0417 zu bezahlen?"
+ },
+ {
+  "gruppe": "bild",
+  "stein": "diagramm_bild",
+  "seiten": [
+   26
+  ],
+  "frage": "Wie viele Neukunden gab es im dritten Quartal 2025?"
+ },
+ {
+  "gruppe": "bild",
+  "stein": "diagramm_bild",
+  "seiten": [
+   26
+  ],
+  "frage": "Was kostet der Pro-Tarif im Monat?"
+ },
+ {
+  "gruppe": "bild",
+  "stein": "formular_annotationen",
+  "seiten": [
+   27
+  ],
+  "frage": "In welcher Abteilung arbeitet Erika Mustermann?"
+ },
+ {
+  "gruppe": "layout",
+  "stein": "silbentrennung",
+  "seiten": [
+   10
+  ],
+  "frage": "Welche Versicherung hat die Donaudampfschifffahrtsgesellschaft gekündigt?"
+ },
+ {
+  "gruppe": "layout",
+  "stein": "silbentrennung",
+  "seiten": [
+   10
+  ],
+  "frage": "Bis wann muss die Arbeitsunfähigkeitsbescheinigung eingereicht werden?"
+ },
+ {
+  "gruppe": "layout",
+  "stein": "mehrspaltig",
+  "seiten": [
+   11
+  ],
+  "frage": "Bis wann muss Resturlaub genommen werden?"
+ },
+ {
+  "gruppe": "layout",
+  "stein": "mehrspaltig",
+  "seiten": [
+   11
+  ],
+  "frage": "In welcher Klasse fährt man auf Dienstreisen Bahn?"
+ },
+ {
+  "gruppe": "layout",
+  "stein": "stream_reihenfolge",
+  "seiten": [
+   12
+  ],
+  "frage": "Wann wird der Server neu gestartet?"
+ },
+ {
+  "gruppe": "layout",
+  "stein": "stream_reihenfolge",
+  "seiten": [
+   12
+  ],
+  "frage": "Was mache ich, nachdem ich die alte Batterie entnommen habe?"
+ },
+ {
+  "gruppe": "layout",
+  "stein": "hoch_tiefgestellt",
+  "seiten": [
+   13
+  ],
+  "frage": "Wie groß ist die Bürofläche?"
+ },
+ {
+  "gruppe": "layout",
+  "stein": "hoch_tiefgestellt",
+  "seiten": [
+   13
+  ],
+  "frage": "Wie hat sich der CO2-Ausstoß entwickelt?"
+ },
+ {
+  "gruppe": "layout",
+  "stein": "ueberschriften_listen",
+  "seiten": [
+   14
+  ],
+  "frage": "Wie lang muss ein Passwort mindestens sein?"
+ },
+ {
+  "gruppe": "layout",
+  "stein": "ueberschriften_listen",
+  "seiten": [
+   14
+  ],
+  "frage": "Nach wie vielen Jahren werden personenbezogene Daten gelöscht?"
+ },
+ {
+  "gruppe": "layout",
+  "stein": "gedreht_rtl",
+  "seiten": [
+   18
+  ],
+  "frage": "Wer muss den Entwurf noch freigeben?"
+ },
+ {
+  "gruppe": "layout",
+  "stein": "doppelter_text",
+  "seiten": [
+   19
+  ],
+  "frage": "Was passiert mit der Garantie, wenn man das Gerät öffnet?"
+ },
+ {
+  "gruppe": "layout",
+  "stein": "wasserzeichen",
+  "seiten": [
+   20
+  ],
+  "frage": "Wann ist die Kernarbeitszeit?"
+ },
+ {
+  "gruppe": "layout",
+  "stein": "wasserzeichen",
+  "seiten": [
+   20
+  ],
+  "frage": "Wie viele Plusstunden darf das Arbeitszeitkonto höchstens haben?"
+ },
+ {
+  "gruppe": "layout",
+  "stein": "inkrementelles_update",
+  "seiten": [
+   30
+  ],
+  "frage": "Wie hoch ist der Vertragswert?"
+ },
+ {
+  "gruppe": "layout",
+  "stein": "text_in_xobject",
+  "seiten": [
+   31
+  ],
+  "frage": "Auf wie viel Prozent wird das Form-XObject verkleinert?"
+ },
+ {
+  "gruppe": "layout",
+  "stein": "formel",
+  "seiten": [
+   32,
+   33,
+   34
+  ],
+  "frage": "Wie ist die Zustandssumme des Ising-Modells definiert?"
+ },
+ {
+  "gruppe": "layout",
+  "stein": "office_export",
+  "seiten": [
+   35
+  ],
+  "frage": "An wie vielen Tagen pro Woche darf man mobil arbeiten?"
+ },
+ {
+  "gruppe": "layout",
+  "stein": "browser_chrome",
+  "seiten": [
+   36,
+   37
+  ],
+  "frage": "Ab welcher Strecke haben Bahnreisen Vorrang vor Flügen?"
+ },
+ {
+  "gruppe": "tabelle",
+  "stein": "tabellen",
+  "seiten": [
+   15
+  ],
+  "frage": "Wie hoch war der Umsatz in der Region Süd 2024?"
+ },
+ {
+  "gruppe": "tabelle",
+  "stein": "tabellen",
+  "seiten": [
+   15
+  ],
+  "frage": "Was kostet die Beratung als Einzelpreis?"
+ },
+ {
+  "gruppe": "tabelle",
+  "stein": "browser_chrome",
+  "seiten": [
+   36,
+   37
+  ],
+  "frage": "Wie hoch ist die Kilometerpauschale für den Pkw?"
+ },
+ {
+  "gruppe": "seitengrenze",
+  "stein": "tabelle_seitenumbruch",
+  "seiten": [
+   17
+  ],
+  "frage": "Wie viel ist das gesamte Inventar der Niederlassung Köln wert?"
+ },
+ {
+  "gruppe": "seitengrenze",
+  "stein": "tabelle_seitenumbruch",
+  "seiten": [
+   16,
+   17
+  ],
+  "frage": "Welchen Wert hat das Konferenzsystem mit Kamera und Mikrofonen?"
+ },
+ {
+  "gruppe": "seitengrenze",
+  "stein": "seitenumbruch",
+  "seiten": [
+   21,
+   22
+  ],
+  "frage": "Wie viele Wochen vor Ablauf der Mindestlaufzeit muss die Kündigung eingehen?"
+ },
+ {
+  "gruppe": "ids",
+  "stein": "ocr_layer",
+  "seiten": [
+   25
+  ],
+  "frage": "Kundennummer 88172"
+ },
+ {
+  "gruppe": "ids",
+  "stein": "ocr_layer",
+  "seiten": [
+   25
+  ],
+  "frage": "Rechnung 2026-0417"
+ },
+ {
+  "gruppe": "ids",
+  "stein": "tounicode_fehlt",
+  "seiten": [
+   3
+  ],
+  "frage": "Durchwahl 4711"
+ },
+ {
+  "gruppe": "ids",
+  "stein": "browser_chrome",
+  "seiten": [
+   36,
+   37
+  ],
+  "frage": "0800 555 0199"
+ },
+ {
+  "gruppe": "ids",
+  "stein": "stream_reihenfolge",
+  "seiten": [
+   12
+  ],
+  "frage": "Hotline 1234"
+ },
+ {
+  "gruppe": "kontrolle",
+  "stein": "ablenker",
+  "ids": [
+   "ArbZG-002"
+  ],
+  "frage": "Wie lang muss die Ruhepause bei mehr als sechs Stunden Arbeit sein?"
+ },
+ {
+  "gruppe": "kontrolle",
+  "stein": "ablenker",
+  "ids": [
+   "BRKG-003"
+  ],
+  "frage": "Wie viel Tagegeld wird für ein unentgeltliches Frühstück einbehalten?"
+ },
+ {
+  "gruppe": "kontrolle",
+  "stein": "ablenker",
+  "ids": [
+   "KSchG-002",
+   "KSchG-003"
+  ],
+  "frage": "Innerhalb welcher Frist muss man Kündigungsschutzklage erheben?"
+ },
+ {
+  "gruppe": "kontrolle",
+  "stein": "ablenker",
+  "ids": [
+   "BUrlG-001"
+  ],
+  "frage": "Wie viele Werktage beträgt der gesetzliche Mindesturlaub?"
+ },
+ {
+  "gruppe": "kontrolle",
+  "stein": "ablenker",
+  "ids": [
+   "AGG-007"
+  ],
+  "frage": "§ 22 Beweislast"
+ }
+]

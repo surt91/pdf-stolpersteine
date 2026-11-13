@@ -1,0 +1,293 @@
+[
+ {
+  "gruppe": "fussnote",
+  "fakt": 1,
+  "frage": "Wann ist die Tiefgarage wegen Reinigung gesperrt?"
+ },
+ {
+  "gruppe": "fussnote",
+  "fakt": 1,
+  "frage": "Wo bekomme ich einen Ersatzschlüssel für die Fahrradbox?"
+ },
+ {
+  "gruppe": "fussnote",
+  "fakt": 2,
+  "frage": "Wo hängt der Defibrillator?"
+ },
+ {
+  "gruppe": "fussnote",
+  "fakt": 2,
+  "frage": "Wer ist Ersthelferin im Gebäude?"
+ },
+ {
+  "gruppe": "fussnote",
+  "fakt": 3,
+  "frage": "Wie lange kann man das Lastenrad ausleihen?"
+ },
+ {
+  "gruppe": "fussnote",
+  "fakt": 3,
+  "frage": "Bis zu welchem Gewicht nimmt die Poststelle private Pakete an?"
+ },
+ {
+  "gruppe": "nup",
+  "seite": 1,
+  "frage": "Ab wann vor der Entbindung darf eine schwangere Frau nicht mehr beschäftigt werden?"
+ },
+ {
+  "gruppe": "nup",
+  "seite": 2,
+  "frage": "Wie viele Stunden darf eine schwangere Frau höchstens am Tag arbeiten?"
+ },
+ {
+  "gruppe": "nup",
+  "seite": 3,
+  "frage": "Darf eine schwangere oder stillende Frau an Sonn- und Feiertagen arbeiten?"
+ },
+ {
+  "gruppe": "nup",
+  "seite": 4,
+  "frage": "Muss der Arbeitgeber dafür sorgen, dass sich eine schwangere Frau bei der Arbeit hinlegen und ausruhen kann?"
+ },
+ {
+  "gruppe": "nup",
+  "seite": 5,
+  "frage": "Mit welchen Biostoffen darf eine schwangere Frau nicht in Kontakt kommen?"
+ },
+ {
+  "gruppe": "nup",
+  "seite": 6,
+  "frage": "Wie schwere Lasten darf eine schwangere Frau regelmäßig von Hand heben?"
+ },
+ {
+  "gruppe": "nup",
+  "seite": 7,
+  "frage": "In welcher Rangfolge muss der Arbeitgeber Schutzmaßnahmen für eine schwangere Frau ergreifen?"
+ },
+ {
+  "gruppe": "nup",
+  "seite": 8,
+  "frage": "Bis wann nach einer Fehlgeburt ist eine Kündigung unzulässig?"
+ },
+ {
+  "gruppe": "nummer",
+  "ids": [
+   "rechnungen-001"
+  ],
+  "frage": "Rechnung RE-2026-08817"
+ },
+ {
+  "gruppe": "nummer",
+  "ids": [
+   "rechnungen-002"
+  ],
+  "frage": "Rechnung RE-2026-08871"
+ },
+ {
+  "gruppe": "nummer",
+  "ids": [
+   "rechnungen-003"
+  ],
+  "frage": "Rechnung RE-2026-08187"
+ },
+ {
+  "gruppe": "nummer",
+  "ids": [
+   "rechnungen-004"
+  ],
+  "frage": "Rechnung RE-2026-08718"
+ },
+ {
+  "gruppe": "vorlage",
+  "ids": [
+   "rechnungen-002"
+  ],
+  "frage": "Was hat die Tischlerei Aumüller bestellt?"
+ },
+ {
+  "gruppe": "vorlage",
+  "ids": [
+   "rechnungen-003"
+  ],
+  "frage": "Wie hoch ist die Rechnung an die Praxis Dr. Sandhoff?"
+ },
+ {
+  "gruppe": "hellgrau",
+  "ids": [
+   "kontrast-001"
+  ],
+  "frage": "Wann hat der Betriebsarzt Sprechstunde?"
+ },
+ {
+  "gruppe": "hellgrau",
+  "ids": [
+   "kontrast-001"
+  ],
+  "frage": "In welchem Raum ist die Sprechstunde von Dr. Wieland?"
+ },
+ {
+  "gruppe": "fast_weiss",
+  "ids": [
+   "kontrast-002"
+  ],
+  "frage": "Wo liegt der Tresorcode für den Serverraum?"
+ },
+ {
+  "gruppe": "fast_weiss",
+  "ids": [
+   "kontrast-002"
+  ],
+  "frage": "Wie oft wird der Tresorcode für den Serverraum geändert?"
+ },
+ {
+  "gruppe": "gedreht",
+  "ids": [
+   "gedreht-001"
+  ],
+  "frage": "Wann ist die Schichtübergabe im Lager?"
+ },
+ {
+  "gruppe": "gedreht",
+  "ids": [
+   "gedreht-001"
+  ],
+  "frage": "Wer hat in Kalenderwoche 23 am Donnerstag Nachtschicht im Lager?"
+ },
+ {
+  "gruppe": "kontrolle",
+  "ids": [
+   "ArbZG-002"
+  ],
+  "frage": "Wie lang muss die Ruhepause bei mehr als sechs Stunden Arbeit sein?"
+ },
+ {
+  "gruppe": "kontrolle",
+  "ids": [
+   "BRKG-003"
+  ],
+  "frage": "Wie viel Tagegeld wird für ein unentgeltliches Frühstück einbehalten?"
+ },
+ {
+  "gruppe": "kontrolle",
+  "ids": [
+   "KSchG-002",
+   "KSchG-003"
+  ],
+  "frage": "Innerhalb welcher Frist muss man Kündigungsschutzklage erheben?"
+ },
+ {
+  "gruppe": "kontrolle",
+  "ids": [
+   "BUrlG-001"
+  ],
+  "frage": "Wie viele Werktage beträgt der gesetzliche Mindesturlaub?"
+ },
+ {
+  "gruppe": "kontrolle",
+  "ids": [
+   "AGG-007"
+  ],
+  "frage": "§ 22 Beweislast"
+ },
+ {
+  "gruppe": "kontrolle",
+  "ids": [
+   "ArbZG-002"
+  ],
+  "frage": "Wie viele Stunden darf die werktägliche Arbeitszeit höchstens betragen?"
+ },
+ {
+  "gruppe": "kontrolle",
+  "ids": [
+   "ArbZG-005"
+  ],
+  "frage": "Wie viele Sonntage im Jahr müssen beschäftigungsfrei bleiben?"
+ },
+ {
+  "gruppe": "kontrolle",
+  "ids": [
+   "BUrlG-001"
+  ],
+  "frage": "Nach welcher Wartezeit entsteht der volle Urlaubsanspruch?"
+ },
+ {
+  "gruppe": "kontrolle",
+  "ids": [
+   "EntgFG-001",
+   "EntgFG-002"
+  ],
+  "frage": "Wie lange zahlt der Arbeitgeber im Krankheitsfall das Entgelt weiter?"
+ },
+ {
+  "gruppe": "kontrolle",
+  "ids": [
+   "EntgFG-001"
+  ],
+  "frage": "Bekommt man für Arbeitszeit, die wegen eines Feiertags ausfällt, Entgelt?"
+ },
+ {
+  "gruppe": "kontrolle",
+  "ids": [
+   "KSchG-003"
+  ],
+  "frage": "Wie hoch darf die Abfindung nach dem Kündigungsschutzgesetz höchstens sein?"
+ },
+ {
+  "gruppe": "kontrolle",
+  "ids": [
+   "KSchG-008"
+  ],
+  "frage": "Ab welcher Betriebsgröße gilt der Kündigungsschutz?"
+ },
+ {
+  "gruppe": "kontrolle",
+  "ids": [
+   "TzBfG-006"
+  ],
+  "frage": "Wie lange darf ein Arbeitsvertrag ohne sachlichen Grund befristet werden?"
+ },
+ {
+  "gruppe": "kontrolle",
+  "ids": [
+   "TzBfG-005"
+  ],
+  "frage": "Welche Wochenarbeitszeit gilt bei Arbeit auf Abruf, wenn keine vereinbart ist?"
+ },
+ {
+  "gruppe": "kontrolle",
+  "ids": [
+   "NachwG-002"
+  ],
+  "frage": "Bis wann muss der Arbeitgeber die wesentlichen Vertragsbedingungen schriftlich aushändigen?"
+ },
+ {
+  "gruppe": "kontrolle",
+  "ids": [
+   "AGG-005",
+   "AGG-007"
+  ],
+  "frage": "Innerhalb welcher Frist muss man eine Entschädigung wegen Benachteiligung geltend machen?"
+ },
+ {
+  "gruppe": "kontrolle",
+  "ids": [
+   "BDSG-025"
+  ],
+  "frage": "Ab wie vielen Beschäftigten braucht ein Unternehmen einen Datenschutzbeauftragten?"
+ },
+ {
+  "gruppe": "kontrolle",
+  "ids": [
+   "BDSG-007",
+   "BDSG-008"
+  ],
+  "frage": "Wann ist die Videoüberwachung öffentlich zugänglicher Räume zulässig?"
+ },
+ {
+  "gruppe": "kontrolle",
+  "ids": [
+   "BRKG-001"
+  ],
+  "frage": "Innerhalb welcher Frist muss die Reisekostenvergütung beantragt werden?"
+ }
+]

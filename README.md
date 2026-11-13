@@ -19,7 +19,8 @@ Für den Folgeartikel über visuelles Retrieval liegt im Wurzelverzeichnis auße
 Seiten aus `out/stolpersteine.pdf`, 30 Seiten mit Stolpersteinen für visuelle Modelle (kleine
 Schrift, mehrere Seiten pro Blatt, verwechselbare Rechnungsnummern, blasser und gedrehter Text,
 alle mit einwandfreiem Textlayer) und als Ablenker neun Arbeitsgesetze von
-gesetze-im-internet.de mit zusammen 104 Seiten.
+gesetze-im-internet.de mit zusammen 104 Seiten. Generator, Fragen und Auswertung dazu stehen in
+[`visual-retrieval/`](visual-retrieval/).
 
 ## Schnellstart
 
